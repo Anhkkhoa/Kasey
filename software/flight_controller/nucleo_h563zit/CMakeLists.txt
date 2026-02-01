@@ -66,3 +66,6 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
     # Add user defined libraries
 )
+
+#cmake -S nucleo_h563zit -B build_h563 -G Ninja
+#ninja -C build_h563

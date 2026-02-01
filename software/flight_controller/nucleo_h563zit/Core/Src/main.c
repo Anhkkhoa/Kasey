@@ -117,7 +117,7 @@ int main(void)
   {
 
     /* USER CODE END WHILE */
-
+    BSP_LED_On(LED_GREEN);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

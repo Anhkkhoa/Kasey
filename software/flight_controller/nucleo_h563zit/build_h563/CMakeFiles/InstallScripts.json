@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/cmake_install.cmake",
+		"C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
