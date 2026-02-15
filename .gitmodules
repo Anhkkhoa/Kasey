@@ -1,0 +1,3 @@
+[submodule "Serial_Protocol_Baremetal"]
+	path = Serial_Protocol_Baremetal
+	url = https://github.com/Anhkkhoa/Serial_Protocol_Baremetal.git
