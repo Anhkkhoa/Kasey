@@ -1,6 +1,0 @@
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/CMakeFiles/nucleo_h563zit.dir
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/CMakeFiles/edit_cache.dir
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/CMakeFiles/rebuild_cache.dir
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
-C:/Users/anhkk/Documents/ENGINEERING/Kasey/software/flight_controller/nucleo_h563zit/build_h563/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

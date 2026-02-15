@@ -1,0 +1,6 @@
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/CMakeFiles/nucleo_h563zit.dir
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/CMakeFiles/edit_cache.dir
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/CMakeFiles/rebuild_cache.dir
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

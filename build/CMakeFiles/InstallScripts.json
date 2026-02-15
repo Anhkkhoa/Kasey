@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/cmake_install.cmake",
+		"C:/Users/anhkk/Documents/ENGINEERING/Software/Baremetal/build/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

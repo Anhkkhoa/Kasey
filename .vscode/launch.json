@@ -6,7 +6,7 @@
     "configurations": [
         {
             "cwd": "${workspaceRoot}",
-            "executable": "./build_h563/nucleo_h563zit.elf", //Changing this to the executable file
+            "executable": "./build/nucleo_h563zit.elf", //Changing this to the executable file
             "name": "Debug with OpenOCD",
             "request": "launch",
             "type": "cortex-debug",
