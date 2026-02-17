@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include <uart.h>
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -76,7 +77,7 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-
+  UART_Init();
   /* USER CODE END Init */
 
   /* Configure the system clock */
