@@ -28,7 +28,7 @@ void UART_Init(void) {
     GPIOD->AFR[1] &= ~((16U << (4 * 0) | (16U << (4 * 1)))); //Clear ARFH bits
     GPIOD->AFR[1] |= ((7U << (4 * 0)) | (7U << (4 * 1))); //AF7
 
-    //UART3 Configuration
+    //UART3 Configuration - If it doesn't work, check the alternate register
     //Control Register 1
     USART3->CR1 &= ~((3U << 30) //RXFIFO and TXFIFO Full Interupt Disable
                     |(USART_CR1_M1) //1 start bit, 8 data bits, n stop bits
@@ -72,6 +72,29 @@ void UART_Init(void) {
                     |(USART_CR3_ONEBIT) //One sample bit method as non-noisy environment
                     |(USART_CR3_DMAT) | (USART_CR3_DMAR)); //DMA receiver and transmitter disable
     
+    //Setting Baud Rate
+    USART3->BRR |= 2170; //250MHz divide for 115200
+
     //Enable UART3
-    USART3->CR1 |= (1U << 0);
+    USART3->CR1 |= ((USART_CR1_TE) | (USART_CR1_RE) | (USART_CR1_UE)); 
+}
+
+//Read 1 bit data of receiving UART
+uint8_t receive_UART(void) {
+    uint8_t rxData = 0;
+
+    //Checking if there are dadta in the receiver data register to avoid overwrite
+    if(USART3->ISR & USART_ISR_RXNE) {
+        rxData = USART3->RDR; //read from data register
+    }
+
+    return rxData;
+}
+
+void transmit_UART(uint8_t txData) {
+
+    //Making sure transmit data is empty to avoid overwrite
+    while(!(USART3->ISR & USART_ISR_TXE)); //Allow until
+    
+    USART3->TDR = txData; 
 }

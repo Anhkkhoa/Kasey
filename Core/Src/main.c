@@ -90,7 +90,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
+  BSP_LED_On(LED_RED);
+  HAL_Delay(100);
+  BSP_LED_On(LED_YELLOW);
+  HAL_Delay(100);
+  BSP_LED_On(LED_GREEN);
+  HAL_Delay(100);
   /* USER CODE END 2 */
 
   /* Initialize leds */
@@ -118,8 +123,11 @@ int main(void)
   {
 
     /* USER CODE END WHILE */
-    BSP_LED_On(LED_GREEN);
+    if (receive_UART() > 0) { //If not receive anything, then send out letter U
+      transmit_UART(85);
+    }
     /* USER CODE BEGIN 3 */
+    
   }
   /* USER CODE END 3 */
 }
